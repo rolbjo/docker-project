@@ -1,7 +1,6 @@
 const express = require('express')
 
-const app = express(),
-  port = process.env.PORT || 3000
+const app = express()
 
 app.get('/api', (_request, response) => {
   response.send({ hello: 'World' })
@@ -9,6 +8,6 @@ app.get('/api', (_request, response) => {
 
 app.use(express.static(path.join(path.resolve(), 'public')))
 
-app.listen(port, () => {
-  console.log(`Redo på http://localhost:${port}/`)
+app.listen(3000, () => {
+  console.log(`Redo på http://localhost:3000/`)
 })
