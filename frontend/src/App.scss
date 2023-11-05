@@ -1,0 +1,17 @@
+
+
+.questionContainer{
+  display: flex;
+  align-items: center;
+  & > *
+{
+margin-left: 10px;
+}
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-items: flex-start;
+}
